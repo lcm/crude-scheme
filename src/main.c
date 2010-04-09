@@ -11,11 +11,12 @@
 
 int main(void)
 {
-    object_t *my_cons = cs_make_cons(NIL, NIL);
+    cs_make_cons(
+        cs_make_integer(2),
+        cs_make_integer(3));
 
     return 0;
 }
 
 
-/* vim: sw=4 cindent et 
- */
+/* vim: set cindent sw=4 expandtab: */

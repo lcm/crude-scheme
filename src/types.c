@@ -32,3 +32,14 @@ object_t *cs_make_cons(object_t *car, object_t *cdr)
 
     return c;
 }
+
+
+object_t *cs_make_integer(int value)
+{
+    object_t *c = cs_alloc_object(integer);
+    c->integer = value;
+    return c;
+}
+
+
+/* vim: set cindent sw=4 expandtab: */
