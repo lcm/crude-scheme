@@ -4,16 +4,22 @@
  */
 
 
+#include <stdio.h>
 #include <stdlib.h>
 
-#include "types.h"
+#include "crudescheme.h"
 
 
 int main(void)
 {
-    cs_make_cons(
-        cs_make_integer(2),
-        cs_make_integer(3));
+    object_t *two = cs_make_integer(2),
+        *three = cs_make_integer(3);
+    object_t *pair = cs_make_cons(two, three);
+
+    cs_print_object(two);
+    printf("\n");
+    cs_print_object(pair);
+    printf("\n");
 
     return 0;
 }

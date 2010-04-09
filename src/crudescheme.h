@@ -45,3 +45,5 @@ extern object_t * const NIL;
 
 object_t *cs_make_cons(object_t *car, object_t *cdr);
 object_t *cs_make_integer(int value);
+
+void cs_print_object(object_t *o);
